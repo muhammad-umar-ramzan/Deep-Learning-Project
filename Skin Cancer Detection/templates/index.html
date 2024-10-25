@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Skin Cancer Detection</h1>
+        <form id="imageForm">
+            <label for="imageUpload">Upload Image:</label>
+            <input type="file" id="imageUpload" accept="image/*" required>
+            <button type="submit">Detect Cancer</button>
+        </form>
+        <div id="result">
+            <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none;">
+            <p id="prediction"></p>
+            <p id="suggestion"></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
